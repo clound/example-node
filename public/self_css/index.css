@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.header_top{
+    position: fixed;
+    height: 44px;
+    width: 100%;
+    background-color: #000;
+}
+.nav_area{
+    height: 44px;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+}
+/*login_reg*/
+.login_right{
+    width: 150px;
+    font-size: 12px;
+    float: right;
+}
+.login_right li{
+    float: left;
+    line-height: 25px;
+    list-style: none;
+    padding: 10px;
+}
+.login_right a{
+    text-decoration: none;
+    color: #fff;
+}
+/*list info*/
+.list{
+    width: 300px;
+    font-size: 12px;
+    float: left;
+}
+.list li{
+    float: left;
+    line-height: 25px;
+    list-style: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.list a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 10px 10px 20px;
+
+}
+.list a:hover{
+    color: #000;
+    background-color: #fff;
+    border-bottom: 2px solid;
+    border-bottom-color: red;
+}
+/*logo search*/
+#header2 {
+    background-color: #f8f8f8;
+    height: 86px;
+    position: fixed;
+    width: 100%;
+}
+#header2 .header2_con {
+    /*border: 1px solid red;*/
+    width: 960px;
+    height: 86px;
+    position: relative;
+    margin: 0 auto;
+    /*display: inline;*/
+
+}
+#header2 .logo {
+    /*border: 1px solid red;*/
+    width: 232px;
+    height: 60px;
+    margin-top: 13px;
+    float: left;
+    /*width: 125px;*/
+}
+#header2 .logo a{
+    color: #000;
+    text-decoration: none;
+}
+#header2 .tool1 {
+    float: right;
+}
+#header2 .search {
+    border: 1px solid #999999;
+    display: inline;
+    float: left;
+    height: 26px;
+    margin: 30px 0 0 70px;
+    text-align: left;
+    width: 375px;
+}
+#header2 #searchKeyword {
+    background-color: #fff;
+    border: medium none;
+    color: #aaa;
+    float: left;
+    font-size: 12px;
+    height: 26px;
+    line-height: 26px;
+    text-indent: 10px;
+    width: 340px;
+}
+#header2 .btn-sear {
+    border: medium none;
+    cursor: pointer;
+    height: 26px;
+    width: 35px;
+}
