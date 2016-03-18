@@ -29,8 +29,8 @@ var Firstpage ={
                                 $(".content ul").append(html);
                             }
                             if(i<=num){
-                                var pagcont = '<span class="prepage">' +
-                                    '<a title="prefix" href="#">' + (i+1) + '</a>' +
+                                var pagcont = '<span class="prepage">'+
+                                    '<a title="prefix" href="#">' + (i+1) + '</a>'+
                                     '</span>';
                                 $(".content .product-list").append(pagcont);
                             }
@@ -44,11 +44,14 @@ var Firstpage ={
         _this.showPage();
     },
     showPage: function () {
-        $(".prepage").click(function () {
-            var num = $('.prepage a').val();
-            console.log("len+++++++++++++");
+        console.log("len+++++++++++++");
+        //$(".content ul").children('li').remove();
+        $(".content .prepage").on('click','a',function () {
+            var num = $(this).children('a').text();
+            var url = '/getAllproductioninfo/' + num;
+            console.log("len+++++++++++++*"+num);
             $.ajax({
-                url: '/getAllproductioninfo/' + num,
+                url: url,
                 type: 'get',
                 success:function(data,status){
                     var result = data;

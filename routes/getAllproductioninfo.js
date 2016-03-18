@@ -18,7 +18,7 @@ module.exports = function ( app ) {
     })
     app.get('/getAllproductioninfo/:id', function(req, res) {
         var page = req.params.id;
-        //console.log("page+" + page);
+        console.log("page+" + page);
         var Productinfo = global.dbHelper.getModel('commodity');
         Productinfo.count({}, function(err, count) {
             Productinfo.find({}, null, {skip: (page-1)*8, limit: 8,sort:{"time":-1}}, function (error, docs) {
