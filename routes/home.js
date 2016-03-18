@@ -17,6 +17,7 @@ module.exports = function ( app ) {
         var Commodity = global.dbHelper.getModel('commodity');
         Commodity.create({
             name: req.body.name,
+            description:req.body.content,
             price: req.body.price,
             imgSrc: req.body.imgSrc
         }, function (error, doc) {

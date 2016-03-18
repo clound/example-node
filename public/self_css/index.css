@@ -125,6 +125,7 @@
     text-align: center;
     list-style: none;
     line-height: 33px;
+    float: left;
     cursor: pointer;
     transition: all 0.2s linear 0s;
     background-color: #fff;

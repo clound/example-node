@@ -46,7 +46,7 @@ app.use(function(req, res, next){
 require('./routes')(app);
 
 app.get('/', function(req, res) {
-    res.render('index');
+    res.render('firstpage');
 });
 
 app.listen(3000);

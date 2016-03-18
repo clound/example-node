@@ -6,6 +6,7 @@ module.exports = {
     },
     commodity: {
         name: String,
+        description:String,
         price: Number,
         imgSrc: String
     },
