@@ -15,9 +15,10 @@ module.exports = function ( app ) {
     });
     app.post('/addcommodity', function (req, res) {
         var Commodity = global.dbHelper.getModel('commodity');
+        console.log("req body" + req.body.description);
         Commodity.create({
             name: req.body.name,
-            description:req.body.content,
+            description:req.body.description,
             price: req.body.price,
             imgSrc: req.body.imgSrc
         }, function (error, doc) {

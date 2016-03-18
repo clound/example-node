@@ -111,6 +111,7 @@
 /*content area*/
 .content{
     width: 100%;
+    /*border: 1px solid red;*/
     background-color: #e3e3e3;
 }
 .content .product-list{
@@ -119,13 +120,15 @@
 }
 .content .product-list .brick-list{
     padding: 5px;
+    /*clear: both;*/
 }
 .content .product-list .brick-item{
     width: 220px;
     text-align: center;
     list-style: none;
     line-height: 33px;
-    float: left;
+    margin: 10px 0 0 10px;
+    display: inline-block;
     cursor: pointer;
     transition: all 0.2s linear 0s;
     background-color: #fff;
@@ -146,4 +149,25 @@
 }
 .content .product-list .price{
     color: #d43f3a;
+}
+/*prepage*/
+.content .prepage a{
+    float:left;
+    text-decoration:none;
+    padding:.5em 1em;
+    color:#ff0000;
+    font-weight:bold;
+}
+.content .nextpage a{
+    float:right;
+    text-decoration:none;
+    padding:.5em 1em;
+    color:#ff0000;
+    font-weight:bold;
+}
+.content .prepage a:hover,.nextpage a:hover{
+    text-decoration:none;
+    background-color:#ff0000;
+    color:#f9f9f9;
+    transition:color .2s linear;
 }
