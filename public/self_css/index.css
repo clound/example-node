@@ -3,8 +3,6 @@
     padding: 0;
 }
 .header_top{
-    position: fixed;
-    height: 44px;
     width: 100%;
     background-color: #000;
 }
@@ -12,7 +10,6 @@
     height: 44px;
     width: 960px;
     margin: 0 auto;
-    position: relative;
 }
 /*login_reg*/
 .login_right{
@@ -59,15 +56,14 @@
 #header2 {
     background-color: #f8f8f8;
     height: 86px;
-    position: fixed;
     width: 100%;
 }
 #header2 .header2_con {
     /*border: 1px solid red;*/
     width: 960px;
     height: 86px;
-    position: relative;
     margin: 0 auto;
+    clear: both;
     /*display: inline;*/
 
 }
@@ -111,4 +107,42 @@
     cursor: pointer;
     height: 26px;
     width: 35px;
+}
+/*content area*/
+.content{
+    width: 100%;
+    background-color: #e3e3e3;
+}
+.content .product-list{
+    width: 960px;
+    margin: 0 auto;
+}
+.content .product-list .brick-list{
+    padding: 5px;
+}
+.content .product-list .brick-item{
+    width: 220px;
+    text-align: center;
+    list-style: none;
+    line-height: 33px;
+    cursor: pointer;
+    transition: all 0.2s linear 0s;
+    background-color: #fff;
+}
+.content .product-list .brick-item:hover{
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translate3d(0 ,-2px,0 );
+}
+.content .product-list .title a{
+    font-size: 15px;
+    text-decoration: none;
+    color: #333333;
+    /*background-color: #fff;*/
+}
+.content .product-list .desc{
+    font-size: 12px;
+    color: #bbbbbb;
+}
+.content .product-list .price{
+    color: #d43f3a;
 }
