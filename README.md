@@ -1,4 +1,4 @@
-# example-node
+# retailers-node
 一个简单的电商网站demo，使用了nodejs, express, mongodb, mongoose等功能模块。
 
 实现功能：
@@ -11,7 +11,6 @@
 
 4. 加入购物车和结算
 
-欢迎到[汇智网](http://www.hubwiz.com)学习[《node.js实战》](http://www.hubwiz.com/course/549a704f88dba0136c371703/)课程。
 
 使用说明：
 
