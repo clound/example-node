@@ -38,7 +38,8 @@ app.use(function(req, res, next){
     res.locals.user = req.session.user;
     var err = req.session.error;
     res.locals.message = '';
-    if (err) res.locals.message = '<div class="alert alert-danger" style="margin-bottom: 20px;color:red;">' + err + '</div>';
+    if (err)
+        res.locals.message = '<div class="alert alert-danger" style="margin-bottom: 20px;color:red;">' + err + '</div>';
     next();
 });
 
@@ -46,7 +47,7 @@ app.use(function(req, res, next){
 require('./routes')(app);
 
 app.get('/', function(req, res) {
-    res.render('firstpage');
+    res.render('login');
 });
 
 app.listen(3000);

@@ -2,6 +2,16 @@
  * Created by oem on 16-3-18.
  */
 module.exports = function ( app ) {
+    app.get('/firstpage', function (req, res) {
+        if(req.session.user){
+            var name = req.session.user;
+            res.render(firstpage,name);
+
+        }else{
+            req.session.error = "先登录"
+            res.redirect('/login');
+        }
+    });
     //查看商品
     app.get('/getAllproductioninfo', function(req, res) {
         var Productinfo = global.dbHelper.getModel('commodity');

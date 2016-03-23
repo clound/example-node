@@ -12,7 +12,6 @@ var Firstpage = {
                 if (status == 'success') {
                     var num = Math.floor(result.length / 8);
                     for (var i = 0; i <= 8; i++) {
-                        console.log("len" + i + Math.floor(result.length / 8));
                         var html = '<li class="brick-item">' +
                             '<div class="figure figure-img">' +
                             '<a target="_blank"  href="#">' +
@@ -47,12 +46,13 @@ var Firstpage = {
         $(document).on('click',".prepage",function(){
              var id = $(this).children('a').text();
             $(".content ul").children('li').remove();
-            var url = '/getAllproductioninfo/' + id
+            var url = '/getAllproductioninfo/' + id;
             $.ajax({
                 url: url,
                 type: 'get',
                 success:function(data,status){
                     var result = data;
+                    //console.log("result %o" ,result);
                     if(status == 'success') {
                         var len = Math.floor(result.length);
                         for (var i = 0; i <= len; i++) {
